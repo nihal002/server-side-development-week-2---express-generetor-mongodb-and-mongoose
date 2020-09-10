@@ -1,5 +1,6 @@
 const assert = require('assert');
 
+
 exports.insertDocument = (db, document, collection, callback) => {
     const coll = db.collection(collection);
     coll.insert(document, (err, result) => {
